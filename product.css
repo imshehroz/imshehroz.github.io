@@ -1,0 +1,856 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+.flex-img{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    position: block;
+    
+}
+.img-text{
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+    font-size: 30px;
+    color: rgb(95, 95, 95);
+    margin-top: 12px;
+    font-family: "GT Walsheim Pro", sans-serif;
+    font-weight: normal;
+}
+.flex-navbar{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(31, 87, 157);
+}
+.flex-header{
+    background: rgb(50, 147, 185) no-repeat fixed;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+.flex-items{
+   display: flex;
+   color: rgb(31, 87, 157);
+}
+.nav-links{
+   display: flex; 
+   gap: 3.5rem;
+   justify-content: center;
+   padding-top: 20px;
+   padding-left: 70px;
+   list-style: none;
+   cursor: pointer;
+   height: 100%;
+   color: rgb(74 131 203);
+}
+.drop-down1{
+    padding: 15px;
+    margin-top: 10px;
+    font-size: medium;
+    justify-content: center; 
+    text-decoration: none;
+    list-style: none;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    background-color: aliceblue;
+    color: rgb(31, 87, 157) ;
+    border-radius: 5px;
+    line-height: 30px; 
+    z-index: 1;
+  
+}
+.drop-down2{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+    border-radius: 20px;
+    margin-left: -220px;
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    cursor: pointer;
+    background-color:aliceblue;
+    color: rgb(31, 87, 157) ;
+    line-height: 40px;
+    z-index: 1;
+}
+.services{    
+display: flex;
+flex-direction: row;
+display: none;
+}
+.design{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.developement{
+    padding-top: 20px;
+
+}
+.marketing{
+    padding-top: 20px;
+}
+.portfolio{
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-top: 20px;
+    background-color: rgb(223, 235, 249);
+}
+.portfolio p{
+    font-size: larger;
+    justify-content: center;
+    text-align: center;
+    text-wrap: wrap;
+    line-height: 20px;
+    color: #74C0FC;
+    padding-bottom: 10px;
+}
+.fa-arrow-right{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    color: rgb(31, 87, 157);
+}
+.fa-arrow-right:hover{
+    color: #74C0FC;
+}
+a{
+    text-decoration: none;
+    display: flex;
+}
+.nav-link a{
+    display: flex;
+   color: rgb(74 131 203);;
+}
+.nav-link a:hover{
+    color: rgb(40, 93, 114);
+}
+.nav-link:hover .drop-down1{
+    display: block;
+}
+.nav-link:hover{
+     color: rgb(40, 93, 114);
+}
+.nav-link:hover .drop-down2{
+    display: flex;
+}
+.drop-down1 a:hover{
+    color: rgb(211, 230, 254);
+}
+.drop-down2  a:hover{
+    color: rgb(187, 212, 240);
+}
+.fa-caret-down{
+    margin-left: 6px;
+    font-size: 14px;
+    position: relative;
+    transition: rotate(0deg);
+    transition: 0s ease-in-out all;
+}
+.nav-link:hover .fa-caret-down{
+    transform: rotate(180deg);
+}
+.fa-quote-left{
+    margin-right: 8px;
+    margin-left: -20px;
+    margin-top: -8px;
+    border: 2px solid rgb(19, 86, 113);
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(19, 86, 113);
+    font-size: 13px;
+    color: white;
+}
+
+.exceptional{
+    color: white;
+    background-color: rgb(50, 147, 185);
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+.exp-container{
+    display: flex;
+    color: white;
+    background-color: rgb(50, 147, 185);
+    position: relative;
+    margin-left: 10px;
+    overflow: hidden;
+}
+#image1{
+  
+    height: 500px;
+    width: 480px;
+    margin-top: 20%;
+    margin-right: 10px;
+}
+.exp-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+h1{
+    margin-top: 20px;
+    font-size: 55px;
+    line-height: 50px;
+    font-weight: bold;
+
+}
+h5{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: normal;
+
+}
+h6{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.exp-text p{
+    margin-top: 20px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    width: 80%;
+    line-height: 25px;
+}
+#btn1{
+    margin-top: 50px;
+    width: 30%;
+    height: 8%;
+    padding-top: 2px;
+    border-radius: 20px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    cursor: pointer;
+    background: rgb(13, 64, 85);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    justify-items: center;
+    border: 2px solid rgb(13, 64, 85);
+}
+#btn1 i{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: white;
+}
+#btn1:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.software{
+    padding: 10px;
+    padding-top:100px;
+    padding-bottom:200px;
+    font-family: "GT Walsheim Pro", sans-serif;
+    width: 100%;
+    background-color: white;
+    color: rgb(27, 95, 122);
+}
+.software-text{
+    text-align: left;
+    width: 65%;
+    margin-left: 10px;
+}
+.software h1{
+  padding-bottom: 20px;
+  font-size: 45px;
+  font-weight: bold;
+}
+.software-text p{
+  line-height: 30px;
+  color: rgb(95, 95, 95);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boxes{
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    padding-top: 50px;
+    text-align: left;
+    color: rgb(27, 95, 122);
+    margin-top: 10%;
+}
+.box1{
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 7px aliceblue;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    margin-left: 30px;
+}
+.box2{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+}
+.box3{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+}
+.product1{
+    border: 2px solid rgb(209, 228, 244);
+    padding-bottom: 40px;
+}
+.box2:hover{
+    border: 2px rgb(209, 228, 244);
+    box-shadow: 0px 0px 5px 7px aliceblue;
+}
+.product2:hover{
+    border: 2px solid rgb(209, 228, 244);
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+.box3:hover{
+    border: 2px rgb(209, 228, 244);
+    box-shadow: 0px 0px 5px 7px aliceblue;
+}
+.product3:hover{
+    border: 2px solid rgb(209, 228, 244);
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+.boxes h2{
+   color: rgb(27, 95, 122);
+   font-size: 22px;
+   font-weight: bold;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.boxes p{
+    line-height: 30px;
+    margin: 12px;
+    width: 90%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.educational{
+    color: white;
+    background-color: rgb(50, 147, 185);
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+.edu-container{
+    display: flex;
+    color: white;
+    position: relative;
+    margin-left: 10px;
+    overflow: hidden;
+}
+#image2{
+  
+    height: 400px;
+    width: 500px;
+    margin-top: 20%;
+    margin-right: 10px;
+}
+.edu-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+h1{
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+h5{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: normal;
+
+}
+h6{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.edu-text p{
+    margin-top: 20px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: medium;
+    width: 80%;
+    line-height: 25px;
+}
+.system{
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 10%;
+}
+.system h5{
+    font-size: 17px;
+    border-left: 2px solid white;
+    padding-left: 10px;
+    color: white;
+    margin-left: 10px;
+}
+.system p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 10px;
+}
+#btn2{
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(19, 83, 108);
+    border-radius: 30px;
+    background-color: rgb(19, 83, 108);
+    color: white;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    width: 30%;
+    height: 8%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#btn2 i{
+    color: aliceblue;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#btn2:hover{
+    background: transparent;
+    border: 2px solid white;
+}
+
+.hospitality{
+    background-color: white;
+    color: rgb(19, 83, 108);
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+.hos-container{
+    display: flex;
+    color: rgb(19, 83, 108);
+    position: relative;
+    margin-left: 10px;
+    overflow: hidden;
+}
+#image3{
+    height: 500px;
+    width: 450px;
+    padding-right: 20%;
+    padding-top: 20%;
+}
+.hos-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 5px;
+    font-size: 20px;
+    color: rgb(19, 83, 108);
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+h1{
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.hos-text p{
+    margin-top: 20px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: medium;
+    width: 80%;
+    line-height: 25px;
+    color: rgb(95, 95, 95);
+}
+.hos-system{
+    display: flex;
+    padding-bottom: 10%;
+    margin-top: 20px;
+    background-color: white;
+    color: rgb(19, 83, 108);
+}
+.hos-system h5{
+    font-size: 17px;
+    border-left: 2px solid rgb(19, 83, 108);
+    padding-left: 10px;
+    color: white;
+    margin-left: 10px;
+    color: rgb(19, 83, 108);
+}
+.hos-system p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    margin-left: 10px;
+    color: rgb(95, 95, 95);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+}
+#btn3{
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(19, 83, 108);
+    border-radius: 30px;
+    background-color: rgb(19, 83, 108);
+    color: white;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    width: 25%;
+    height: 10%;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#btn3 i{
+    color: aliceblue;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#btn3:hover{
+    background: transparent;
+    border: 2px solid rgb(19, 83, 108);
+    color: rgb(19, 83, 108);
+}
+
+.attendance{
+    background-color: rgb(50, 147, 185);
+    color: white;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+.attend-container{
+    display: flex;
+    color: white;
+    position: relative;
+    margin-left: 10px;
+    overflow: hidden;
+}
+#image4{
+  
+    height: 500px;
+    width: 450px;
+    padding-right: 20%;
+    padding-top: 20%;
+}
+.attend-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.attend-text p{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    width: 80%;
+    line-height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.system{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 10%;
+}
+.system h5{
+    font-size: 17px;
+    border-left: 2px solid white;
+    padding-left: 10px;
+    color: white;
+    margin-left: 10px;
+}
+.staff p{
+    width: 95%;
+}
+.system p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btn4{
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(19, 83, 108);
+    border-radius: 30px;
+    background-color: rgb(19, 83, 108);
+    color: white;
+    padding-bottom: 13px;
+    padding-left: 10px;
+    width: 30%;
+    height: 8%;
+    margin-top: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+#btn4 i{
+    color: aliceblue;
+    font-size: 13px;
+    margin-left: 10px;
+}
+#btn4:hover{
+    background: transparent;
+    border: 2px solid white;
+}
+
+.real-state{
+    background-color: white;
+    color: rgb(19, 83, 108);
+    display: flex;
+    padding-left: 10px;
+    width: 100%;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+.state-container{
+    display: flex;
+    margin-left: 10px;
+    position: sticky;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 100vh;
+    padding-bottom: 5%;
+}
+.state-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 20px;
+    font-family: "GT Walsheim Pro", sans-serif;
+}
+h1{
+    margin-top: 20px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+
+}
+.state-text p{
+    margin-top: 20px;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-size: medium;
+    width: 90%;
+    line-height: 25px;
+    color: rgb(95, 95, 95);
+}
+.state-system{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 10%;
+    text-align: left;
+    margin-left: 10%;
+}
+.state-system h5{
+    font-size: 17px;
+    border-left: 2px solid rgb(19, 83, 108);
+    padding-left: 10px;
+    color: rgb(19, 83, 108);
+    margin-right: 50px;
+}
+.state-system p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color:  rgb(19, 83, 108);
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px;
+    color: rgb(95, 95, 95);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#btn5{
+    margin-top: 50px;
+    width: 40%;
+    height: 5%;
+    padding-top: 2px;
+    border-radius: 20px;
+    padding-bottom: 35px;
+    padding-left: 5px;
+    cursor: pointer;
+    background: rgb(13, 64, 85);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    justify-items: center;
+    border: 2px solid rgb(13, 64, 85);
+}
+#btn5 i{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: white;
+}
+#btn5:hover{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.flex-footer{
+    background-color: black;
+
+}
+.flex-top-footer{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(33, 31, 31);
+}
+.flex-img{
+    height: 50px;
+    width: 60px;
+}
+.flex-icons{
+    color: rgb(15, 83, 110);
+    width: 45%;
+    background-color: white;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 50px;
+    margin-left: 200px;
+    font-size: medium;
+    font-family: sans-serif;
+    border: 1px solid white;
+    height: 50px;
+
+}
+.img-text2{
+    font-size: 30px;
+    color: white;
+    margin-top: auto;
+    font-family: "GT Walsheim Pro", sans-serif;
+    font-weight: normal;
+    margin-left: -90px;
+    padding-right: 90px;
+}
+.end-line{
+    color: white;
+    font-family: sans-serif;
+    background-color: rgb(33, 31, 31);
+    padding-left: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 15px;
+}
+.foot-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-left: 10px;
+    background-color: rgb(33, 31, 31);
+    font-family: "GT Walsheim Pro", sans-serif;
+    line-height: 30px;
+}
+h4{
+    font-weight: bold;
+    color: rgb(23, 145, 194);
+    font-size: 16px;
+}
+.foot-container a{
+    text-decoration: none;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.foot-container p{
+    font-size: 13px;
+}
+.info1{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+
+}
+
+.info2{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.info3{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.info4{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.info5{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.info6{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.info7{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.info8{
+    width: 25%;
+    flex-direction: column;
+    color: white;
+}
+.phone{
+    display: inline-block;
+}

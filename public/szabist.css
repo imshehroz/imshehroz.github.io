@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+img{
+    height: 60px;
+    width: 150px;
+}
+
+body{
+    background: linear-gradient(rgb(46, 46, 167),rgb(6, 6, 75)) no-repeat fixed;
+}
+
+.flex-header{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.flex-navbar{
+    background-color: rgb(5, 5, 77);
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+.flex-items{
+   display: flex; 
+   width: 800px;
+   justify-content: center;
+   padding-top: 20px;
+   color: white;
+   gap: 4rem;
+   text-decoration: none;
+}
+
+.flex-login{
+    display: flex;
+    gap: 1rem;   
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+footer{
+    text-align:center; 
+    padding-top:1.5%; font-size:12px; padding-bottom:2%; color:white; background-color:grey;
+}
